@@ -13,6 +13,9 @@
 		5250FB2F24C6CB4C00C744E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250FB1A24C6CB4700C744E4 /* ContentView.swift */; };
 		5250FB3024C6CB4C00C744E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5250FB1B24C6CB4C00C744E4 /* Assets.xcassets */; };
 		5250FB3124C6CB4C00C744E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5250FB1B24C6CB4C00C744E4 /* Assets.xcassets */; };
+		F8F5A37724C7ED9000416C38 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5A37624C7ED9000416C38 /* TestViewController.swift */; };
+		F8F5A37A24C7EE1300416C38 /* TestControllerRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5A37924C7EE1300416C38 /* TestControllerRepresentation.swift */; };
+		F8F5A37C24C7EE7E00416C38 /* SwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5A37B24C7EE7E00416C38 /* SwiftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		5250FB2A24C6CB4C00C744E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5250FB2B24C6CB4C00C744E4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		5250FB3E24C6D24E00C744E4 /* Array.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F8F5A37624C7ED9000416C38 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		F8F5A37924C7EE1300416C38 /* TestControllerRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestControllerRepresentation.swift; sourceTree = "<group>"; };
+		F8F5A37B24C7EE7E00416C38 /* SwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,7 @@
 		5250FB1824C6CB4700C744E4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				5250FB3A24C6CCF400C744E4 /* Basics */,
-				5250FB3F24C6D40E00C744E4 /* Structure app for previews */,
+				F8F5A37524C7ED7200416C38 /* UIKit Integration */,
 				5250FB1924C6CB4700C744E4 /* swiftui_cookbookApp.swift */,
 				5250FB1A24C6CB4700C744E4 /* ContentView.swift */,
 				5250FB1B24C6CB4C00C744E4 /* Assets.xcassets */,
@@ -94,13 +99,6 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		5250FB3A24C6CCF400C744E4 /* Basics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Basics;
-			sourceTree = "<group>";
-		};
 		5250FB3B24C6D19700C744E4 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +107,22 @@
 			path = Playgrounds;
 			sourceTree = "<group>";
 		};
-		5250FB3F24C6D40E00C744E4 /* Structure app for previews */ = {
+		F8F5A37524C7ED7200416C38 /* UIKit Integration */ = {
 			isa = PBXGroup;
 			children = (
+				F8F5A37824C7EDFE00416C38 /* ViewController */,
 			);
-			path = "Structure app for previews";
+			path = "UIKit Integration";
+			sourceTree = "<group>";
+		};
+		F8F5A37824C7EDFE00416C38 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5A37B24C7EE7E00416C38 /* SwiftView.swift */,
+				F8F5A37624C7ED9000416C38 /* TestViewController.swift */,
+				F8F5A37924C7EE1300416C38 /* TestControllerRepresentation.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F5A37724C7ED9000416C38 /* TestViewController.swift in Sources */,
 				5250FB2E24C6CB4C00C744E4 /* ContentView.swift in Sources */,
+				F8F5A37C24C7EE7E00416C38 /* SwiftView.swift in Sources */,
 				5250FB2C24C6CB4C00C744E4 /* swiftui_cookbookApp.swift in Sources */,
+				F8F5A37A24C7EE1300416C38 /* TestControllerRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
