@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 import SwiftUI
 
+// Any UIViewController that we want to use in SwiftUI
 struct TestControllerRepresentation: UIViewControllerRepresentable {
   let label: String
 
-  func makeUIViewController(
-    context: UIViewControllerRepresentableContext
-    <TestControllerRepresentation>) -> TestViewController {
+  // Create UIViewController
+  func makeUIViewController(context: UIViewControllerRepresentableContext<TestControllerRepresentation>) -> TestViewController {
     let vc = TestViewController()
     vc.text = label
     return vc

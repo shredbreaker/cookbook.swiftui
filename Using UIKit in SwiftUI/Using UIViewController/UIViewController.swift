@@ -5,12 +5,10 @@
 //  Created by Andrey Soloviov on 22/7/20.
 //
 
-import SwiftUI
-
 import UIKit
 
+// Any UIViewController that we want to use in SwiftUI
 class TestViewController: UIViewController {
-  
   var text: String?
   
   override func viewDidLoad() {

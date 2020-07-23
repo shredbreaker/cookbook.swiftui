@@ -14,4 +14,5 @@ func difference(_ list1: [Int], _ list2: [Int]) -> [Int] {
   return list2
 }
 
+
 difference([1, 2, 3, 4, 5], [2, 4, 8, 16, 32]) // [1, 2, 3, 4, 5]

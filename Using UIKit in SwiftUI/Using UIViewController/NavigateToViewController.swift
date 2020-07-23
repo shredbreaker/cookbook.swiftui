@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftView: View {
+struct NavigateToViewControllerView: View {
   var body: some View {
     List {
       ForEach(0..<10) { index in
@@ -24,7 +24,7 @@ struct SwiftView: View {
 struct SwiftView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SwiftView()
+      NavigateToViewControllerView()
     }
   }
 }
