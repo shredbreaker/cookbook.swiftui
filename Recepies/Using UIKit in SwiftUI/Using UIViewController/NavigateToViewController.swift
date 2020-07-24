@@ -14,10 +14,10 @@ struct NavigateToViewControllerView: View {
         NavigationLink(
           destination: TestControllerRepresentation(label: "Index: \(index)"),
           label: {
-            Text("Navigate to \(index)")
+            Text("Navigate to View Controller #\(index)")
           }).padding(.bottom)
       }
-    }
+    }.navigationTitle("Navigate to UIViewController")
   }
 }
 

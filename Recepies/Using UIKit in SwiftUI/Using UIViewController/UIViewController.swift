@@ -13,9 +13,13 @@ class TestViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    addLabel()
+  }
+  
+  func addLabel() {
     let label = UILabel(frame: view.bounds)
     label.text = text
+    label.textAlignment = .center
     view.addSubview(label)
   }
 }

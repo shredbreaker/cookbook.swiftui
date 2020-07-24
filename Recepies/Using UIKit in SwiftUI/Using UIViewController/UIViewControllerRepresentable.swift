@@ -11,7 +11,7 @@ import SwiftUI
 
 // Any UIViewController that we want to use in SwiftUI
 struct TestControllerRepresentation: UIViewControllerRepresentable {
-  let label: String
+  var label: String = "I'm UIViewController in SwiftUI"
 
   // Create UIViewController
   func makeUIViewController(context: UIViewControllerRepresentableContext<TestControllerRepresentation>) -> TestViewController {
@@ -22,8 +22,7 @@ struct TestControllerRepresentation: UIViewControllerRepresentable {
   
   func updateUIViewController(_ uiViewController: TestViewController,
                               context: UIViewControllerRepresentableContext
-                              <TestControllerRepresentation>) {
-    
+                              <TestControllerRepresentation>) {    
   }
   
 }
